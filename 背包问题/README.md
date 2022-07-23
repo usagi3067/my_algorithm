@@ -40,7 +40,7 @@
 
    $f(i - 1, j - V_i) + W_i$
 
-   即$f(i, j) = max\{f(i - 1, j), f(i - 1, j - V_i) + W_i\}$
+   即$f(i, j) = max(f(i - 1, j), f(i - 1, j - V_i) + W_i)$
 
 # 二、完全背包问题
 
@@ -77,8 +77,8 @@
 
 ​	$f(i - 1, j - SV_i) + SW_i$
 
-即$f(i, j) = max\{f(i - 1, j), f(i - 1, j - V_i) + W_i,...,	f(i - 1, j - SV_i) + SW_i\}$
+即$f(i, j) = max(f(i - 1, j), f(i - 1, j - V_i) + W_i,...,	f(i - 1, j - SV_i) + SW_i)$
 
 其上述方案可优化，这里暂不给出推导过程， 直接给结论。
 
-$f(i, j) = max\{f(i - 1,j), f(i, j - V_i) + W_i \}$
+$f(i, j) = max(f(i - 1,j), f(i, j - V_i) + W_i)$
