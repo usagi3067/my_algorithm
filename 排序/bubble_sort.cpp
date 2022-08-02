@@ -12,8 +12,9 @@
  */
 void bubble_sort(int A[], int n)
 {
-	for (bool sorted = false; sorted = !sorted; n--)  //逐躺扫描交换， 直至完全有序
+	for (bool sorted = false; !sorted; n--)  //逐躺扫描交换， 直至完全有序
 	{
+		sorted = true;
 		for (int i = 1; i < n; i++)    // 执行扫描交换 
 		{
 			if (A[i - 1] > A[i])  //若发现逆序
